@@ -1,0 +1,10 @@
+*.o
+*.elf
+*.img
+*.iso
+*.a
+*.fapp
+*~
+kernel/kernel
+kernel/bootblock
+cross
