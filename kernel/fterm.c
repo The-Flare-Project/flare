@@ -12,7 +12,7 @@ void term_write(char data[]){
     switch (TYPE)
     {
     case 0:
-        printf("%s: %s", strlen(data), "lol");
+        printf("%x: %s", strlen(data), "lol");
         serial_write(0, data[0]);
         break;
     

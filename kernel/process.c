@@ -401,6 +401,7 @@ void process_dump(struct process *p)
 	printf("ebp: %x\n", s->regs1.ebp);
 	printf("esp: %x\n", s->esp);
 	printf("eip: %x\n", s->eip);
+	printf("pid: %x\n", p->pid);
 }
 
 int process_available_fd(struct process *p)

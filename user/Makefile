@@ -1,7 +1,7 @@
 
 include ../Makefile.config
 
-USER_PROGRAMS=ball.fapp clock.fapp copy.fapp livestat.fapp manager.fapp fractal.fapp procstat.fapp saver.fapp snake.fapp sysstat.fapp flarewin.fapp
+USER_PROGRAMS=ball.fapp clock.fapp copy.fapp livestat.fapp manager.fapp fractal.fapp procstat.fapp saver.fapp snake.fapp sysstat.fapp flarewin.fapp rgb_test.fapp
 
 all: $(USER_PROGRAMS)
 

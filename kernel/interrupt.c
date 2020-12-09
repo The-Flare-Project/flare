@@ -10,6 +10,7 @@ See the file LICENSE for details.
 #include "process.h"
 #include "kernelcore.h"
 #include "x86.h"
+#include "kshell.h"
 
 static interrupt_handler_t interrupt_handler_table[48];
 static uint32_t interrupt_count[48];

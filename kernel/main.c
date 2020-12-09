@@ -92,9 +92,6 @@ int kernel_main()
 	mount("atapi",2,"cdromfs");
 	printf("Mounted! Running shell...\n");
 
-
-	printf("\e[1;1H\e[2J");
-
 	serial_write(0, 'U');
 	serial_write(0, 's');
 	serial_write(0, 'i');
@@ -116,7 +113,7 @@ int kernel_main()
 	serial_write(0, 'e');
 	serial_write(0, 'n');
 
-	char sh[] = "bin/ballhrktdgsfks c.fapp";
+	char sh[] = "bin/flarewin.fapp";
 
 	int pid = sys_process_run(sh, 0, "");
 	if(pid > 0) {
@@ -129,7 +126,7 @@ int kernel_main()
 	}
 
 	while(1) {
-		console_putchar(&console_root,keyboard_read(0));
+		//console_putchar(&console_root,keyboard_read(0));
 	}
 
 	return 0;

@@ -8,3 +8,5 @@
 kernel/kernel
 kernel/bootblock
 cross
+image/*
+image

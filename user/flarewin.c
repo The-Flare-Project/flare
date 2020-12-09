@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 {
 	int CLOCK_W = 100;
 	int CLOCK_H = 100;
-	int thickness = 4;
 
 	/* Set up window  */
 	draw_window(KNO_STDWIN);
@@ -27,19 +26,8 @@ int main(int argc, char *argv[])
 	draw_color(255, 255, 255);
 	draw_rect(0, 0, 1000, 1000);
 
-	drawWin(10, 10, 200, 200, "Demo");
-
+	drawWin(10, 10, 200, 200, "Demo`s");
 	draw_flush();
-
-	/* Run Clock */
-	char c = 0;
-	while(c != 'q')
-	{
-		syscall_object_read_nonblock(0, &c, 1);
-		syscall_process_sleep(2000);
-		draw_flush();
-
-	}
 
 	return 0;
 }
