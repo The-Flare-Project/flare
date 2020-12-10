@@ -18,16 +18,11 @@ See the file LICENSE for details.
 
 int main(int argc, char *argv[])
 {
-	int CLOCK_W = 100;
-	int CLOCK_H = 100;
-
-	/* Set up window  */
 	draw_window(KNO_STDWIN);
-	draw_clear(0, 0, CLOCK_W, CLOCK_H);
-	draw_color(27,27,27);
-	draw_rect(0, 0, 1000, 1000);
 
-	drawWin(100, 100, 200, 200, "Demo`s");
+	drawbg();
+
+	drawWin(100, 100, 300, 200, "Demo`s");
 	draw_flush();
 
 	return 0;

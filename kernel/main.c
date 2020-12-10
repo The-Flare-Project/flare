@@ -27,6 +27,7 @@ See the file LICENSE for details.
 #include "diskfs.h"
 #include "serial.h"
 #include "fterm.h"
+#include "library/flareui.h"
 
 static int mount( const char *devname, int unit, const char *fs_type)
 {
